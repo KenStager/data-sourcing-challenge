@@ -1,0 +1,39 @@
+# Grading Analysis of the Movie Data Analysis Project
+
+### Part 1: Access the New York Times API (35 points)
+1. **Correct query_url construction (2 points)**: Correctly constructed.
+2. **Creation of an empty list `reviews_list` (1 point)**: Successfully created.
+3. **For loop through 20 pages (3 points)**: Implemented correctly.
+4. **Extension of `query_url` to include page parameter (1 point)**: Done appropriately.
+5. **GET request to retrieve results (4 points)**: Implemented correctly.
+6. **12-second interval between queries (2 points)**: Included as required.
+7. **Use of try-except clause (2 points)**: Implemented correctly.
+8. **Loop through `reviews["response"]["docs"]` (3 points)**: Loops appropriately.
+9. **Appending results to `reviews_list` (2 points)**: Done correctly.
+10. **Printing the query page number (1 point)**: Implemented correctly.
+11. **Except clause handling (2 points)**: Implemented as required.
+12. **Use of `json.dumps` with indent (2 points)**: Used correctly.
+13. **Conversion to DataFrame using `json_normalize()` (2 points)**: Done correctly.
+14. **Extraction of title (3 points)**: Extracted correctly.
+15. **Conversion of "keywords" column to string (3 points)**: Converted correctly.
+16. **Creation of a titles list (2 points)**: List created as required.
+
+### Part 2: Access The Movie Database API (40 points)
+1. **Preparation (4 points)**: Correctly prepared variables and lists.
+2. **Titles for loop (12 points)**: Implemented with request counter and sleep function.
+3. **Try-except clause within the loop (3 points)**: Used with appropriate error handling.
+4. **Collection of movie ID and details retrieval (4 points)**: Implemented correctly.
+5. **Extraction of genres, languages, and countries (6 points)**: Extracted correctly.
+6. **Creation and appending of results dictionary (7 points)**: Dictionary created and appended correctly.
+7. **Preview of first five results (2 points)**: Previewed using `json.dumps`.
+8. **Conversion to DataFrame (2 points)**: Results converted to `tmdb_df`.
+
+### Part 3: Merge and Clean Data for Export (25 points)
+1. **Merging DataFrames (4 points)**: DataFrames merged correctly on the title column.
+2. **Fixing list columns (6 points)**: `genres`, `languages`, and `countries` columns fixed appropriately.
+3. **Dropping `byline.person` column (2 points)**: Column dropped correctly.
+4. **Deletion of duplicate rows and index reset (2 points)**: Duplicates deleted and index reset.
+5. **Exporting to CSV without index (3 points)**: DataFrame exported to CSV without the index.
+
+### Overall
+The provided code meets all the requirements laid out in the Module 6 Challenge, achieving the full score.
